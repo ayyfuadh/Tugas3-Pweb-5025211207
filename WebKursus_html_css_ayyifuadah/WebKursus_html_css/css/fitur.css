@@ -1,0 +1,46 @@
+.fitur-bx{
+    position:relative;
+    min-width: 100%;
+    height:60px;
+    background-color:#85e1f8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.grid-fitur-bx{
+    position:absolute;
+    top:-50px;
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 10px;
+}
+
+.fitur{
+    background-color: #008eb5;
+    width:250px;
+    height:80px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor:pointer;
+    transition: all 0.3s;
+}
+.fitur:hover{
+    transform:scale(1.1);
+    color: #fff;
+}
+.fitur h3{
+    color:black;
+    opacity:0.8;
+    font-size:25px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: all 0.3s;
+}
+.fitur h3:hover{
+    color:#fff;
+}
+

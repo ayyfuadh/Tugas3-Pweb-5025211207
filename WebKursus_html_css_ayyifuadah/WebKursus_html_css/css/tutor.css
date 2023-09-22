@@ -1,0 +1,119 @@
+.tutor-bx{
+    min-width:100%;
+    height:800px;
+    background-color: #85e1f8;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-tutor{
+    width:60%;
+    height:60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap:15px;
+}
+.title-tutor{
+    padding:5px;
+    position:relative;
+}
+.title-tutor::before{
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left:0;
+    border-radius:50px;
+    width: 100%;
+    height:5px;
+    background-color:#01468c;
+    animation:tutor 5s ease-in-out infinite;
+}
+@keyframes tutor{
+    0%,100%{
+        width:0%;
+        transform:translatex(-30px);
+    }
+    50%{
+        width:70%;
+        transform:translatex(60px);
+    }
+    80%{
+        width:20%;
+        transform:translatex(20px);
+    }
+    
+}
+.title-tutor h3{
+    color:#01468c;
+    font-size:40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.tutor{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+    padding:10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius:5px;
+}
+
+.tutor img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    transition:all 0.2s ease;
+    border-radius:5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.tutor::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 71%;
+    background-color:#01468c;
+    opacity:0.5;
+    transition:all 0.5s ease;
+    border-radius:5px;
+}
+.tutor:hover::before{
+    opacity: 0;
+}
+.tutor:hover img{
+    transform:scale(1.06);
+}
+.info-tutor{
+    text-align:center;
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    row-gap:10px;
+}
+.info-tutor h3{
+    color:#01468c;
+    font-size:16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.info-tutor p{
+    color:black;
+    opacity:0.8;
+    font-family: 'Montserrat', sans-serif;
+    font-size:14px;
+}
+.info-tutor .bi{
+    color:#01468c;
+    transition: all 0.3s;
+}
+.info-tutor .bi:hover{
+    color:#01468c;
+}
+.bi-twitter{
+    margin:10px;
+}
